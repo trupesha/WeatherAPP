@@ -1,0 +1,125 @@
+body {
+    background: #8C52FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3); 
+    width: 500px;
+    height: 550px;  
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background 0.5s ease; 
+}
+
+
+h2 {
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 36px;
+}
+
+label,
+p {
+    color: #fff;
+    margin: 8px 0;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 15px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+input:focus{
+    border-color:rgb(255, 195, 31);
+    outline: none;
+}
+
+button {
+    background: #debff4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100px;
+    font-size: 15px;
+    display: block;
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#weather-icon {
+    width: 120px;  
+    height: 120px; 
+    margin: 20px 0;
+    display: block;
+}
+
+#hourly-forecast {
+    margin-top: 30px; 
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 50px;  
+    height: 50px;  
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
